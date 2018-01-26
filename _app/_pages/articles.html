@@ -1,0 +1,10 @@
+---
+layout: page
+title: YoungShook's HQ
+permalink: /
+desc: Recent articles by YoungShook
+---
+
+{% for post in site.posts %}
+  {% include themes/{{ site.amsf_theme }}/includes/page-item.html %}
+{% endfor %}

@@ -1,0 +1,11 @@
+#
+# Custom deployment variables
+#
+
+rsync:
+  default:
+    user: shook.young
+    port: 22
+    host: google-fk
+    dest: /srv/www/youngshook.com/
+    params: --rsync-path="sudo rsync"
