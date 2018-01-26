@@ -5,6 +5,12 @@ cache:
 node_js:
   - "6"
   - "4"
+branches:
+  only:
+  - source
+script:
+- grunt deploy:rsync
+- rm -rf ~/.ssh
 before_install:
   - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
   - rvm use 2.2.2 --install --fuzzy
