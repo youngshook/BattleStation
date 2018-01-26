@@ -100,14 +100,12 @@ processIcon "Icon-72@2x_base.png"
 ```
 ### 产生的新 Icon 效果图
 
-![versioning.png](http://ww4.sinaimg.cn/large/7853084cjw1f7ayrods46j204704fq34.jpg)
+![Image](http://ww4.sinaimg.cn/large/7853084cjw1f7ayrods46j204704fq34.jpg){: .size-small}
 
 
 ### 或可直接下载完整 Shell 代码
 1. [buildIconVersioning.sh][4]  仅在 Build App 时绘制图标, 添加脚本路径到 Scheme 的 Build 下 Pre-actions 的 Run Script 中即可.
 2. [archiveIconVersioning.sh][5] 仅在 Archive 时绘制图标, 添加脚本路径到 Scheme 的 Archive 下 Post-actions 的 Run Script 中即可.
-
-![schemeImage.png](http://ww1.sinaimg.cn/large/7853084cjw1f7aytbp4lbj204m08ct98.jpg)
 
 [1]: http://www.imagemagick.org/
 [2]: http://www.ghostscript.com/

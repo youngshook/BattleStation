@@ -5,15 +5,26 @@ cache:
 node_js:
   - "6"
   - "4"
+cache:
+directories:
+  - node_modules
 branches:
   only:
   - source
-script:
-- grunt deploy:rsync
-- rm -rf ~/.ssh
 before_install:
+  - openssl aes-256-cbc -K $encrypted_3fcda650ac9f_key -iv $encrypted_3fcda650ac9f_iv
+    -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - echo -e "Host youngshook.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - git config --global user.name "YoungShook"
+  - git config --global user.email "shook.young@gmail.com"
   - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
   - rvm use 2.2.2 --install --fuzzy
   - bundle install
+script:
+  - grunt build
+  - rm -rf ~/.ssh
+after_success:
+  - rsync -avz -e 'ssh -o stricthostkeychecking=no -p 22' --delete --progress --rsync-path="sudo rsync" _site/ shook.young@youngshook.com:/srv/www/youngshook.com/
 matrix:
   fast_finish: true

@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/hjiang/1byte.io.svg?branch=master)](https://travis-ci.org/hjiang/1byte.io)
+[![Build Status](https://travis-ci.org/youngshook/BattleStation.svg?branch=source)](https://travis-ci.org/youngshook/BattleStation)
 
 # youngshook.com
 
-A personal site based on [Almace Scaffolding](http://sparanoid.com/lab/amsf/). It is a collection of personal drafts. 
+A personal site based on [Almace Scaffolding](http://sparanoid.com/lab/amsf/). It is a collection of personal drafts.

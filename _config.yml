@@ -135,7 +135,7 @@ rss_excerpt:    false
 
 # Show generator credits
 # Default:      true
-credits:        true
+credits:        false
 
 # Custom records in robots.txt
 # For example:
