@@ -5,7 +5,9 @@ permalink: /about/
 desc: Notes about programming, life, and business
 ---
 
-I’m Li PengXing, I am a Freelance iOS Developer in BeiJing.
+I’m Li PengXing.
+
+A Freelance iOS Developer in BeiJing.
 
 I love new technologies and I am always looking for interesting and challenging projects.
 
