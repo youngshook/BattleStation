@@ -27,11 +27,11 @@ toc: false
 
 #### 工具（Windows）
 
-* 华为光猫ONT维修使能工具 
+* 华为光猫ONT维修使能工具
 * 华为光猫配置文件加解密工具
 * tftp32
 
-[工具下载](https://pan.baidu.com/s/1hsoSD5y) 密码: 6u78
+工具下载: [https://pan.baidu.com/s/1jJwmyt4](https://pan.baidu.com/s/1jJwmyt4) 密码: dawv
 
 ### 一. 提权过程
 1.  打开**tftp32**工具，用以提供 Tftp Server 来传输光猫的配置文件。
@@ -39,23 +39,23 @@ toc: false
 3. 通过 CMD 命令，telnet 192.168.1.1，输入用户名与密码 root / admin，进入 WAP 模式后通过下面命令来上传光猫配置文件，其中 192.168.1.3 更换为自己电脑的 IP。
 ```
 backup cfg by tftp svrip 192.168.1.3 remotefile hw_ctree.xml
-```      
+```
 4. 打开**华为光猫配置文件加解密工具** ，选择上一步获得的 hw_ctree.xml 文件，点击解密即可得到一个解密后的压缩文件，通过解压得到解密后可编辑的 hw_ctree.xml 文件，修改文件中内容 **UserLevel="1"** 改为 **UserLevel="0"**。
 
 ### 二. 恢复光猫设备模式
- 
-``` 
+
+```
 su
 shell
 restorehwmode.sh
 ```
-回到 CMD telnet 中，操作上面命令恢复光猫模式，然后等待光猫重启完毕。 
+回到 CMD telnet 中，操作上面命令恢复光猫模式，然后等待光猫重启完毕。
 
 ### 三. 更新光猫配置文件
 1. 将自己电脑设置为静态 IP, 其中网关 192.168.100.1，子网掩码 255.255.255.0。
 
 2.  然后打开192.168.100.1的后台管理页面，用户名密码: telecomadmin / admintelecom，然后通过 **系统工具**->**配置文件项** 选中修改过的 hw_ctree.xml 配置文件，上传即可并重启光猫。
- 
+
 
 ### 四. 修改光猫模式
 登录光猫的后台管理界面，我们找到 WAN 选项卡页面，在 WAN 类型设置中，我们设置为**路由 WAN** 即可。
