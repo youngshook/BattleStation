@@ -14,15 +14,15 @@ css: |
 
 #### 老司机系列 App，点击下载
 
-* [钉钉 远程打卡 V3.5.2](itms-services://?action=download-manifest&url=https://youngshook.com/apps/Dingding.plist)
+* [钉钉 远程打卡 V3.5.2](itms-services://?action=download-manifest&url=https://coding.net/u/youngshook/p/plist/git/raw/master/Dingding.plist)
 : > **功能**: 添加远程 GPS、Wifi 上班签到打卡
 
 
-* [YouTube++ V12.47.16](itms-services://?action=download-manifest&url=https://youngshook.com/apps/Youtube.plist)
+* [YouTube++ V12.47.16](itms-services://?action=download-manifest&url=https://coding.net/u/youngshook/p/plist/git/raw/master/Youtube.plist)
 : > **功能**: 添加下载视频、后台音频、去广告等功能
 
 
-* [Instagram++ V27.0](itms-services://?action=download-manifest&url=https://youngshook.com/apps/Instagram.plist)
+* [Instagram++ V27.0](itms-services://?action=download-manifest&url=https://coding.net/u/youngshook/p/plist/git/raw/master/Instagram.plist)
 : > **功能**: 添加下载图片与视频，广告过滤等功能
 
 
