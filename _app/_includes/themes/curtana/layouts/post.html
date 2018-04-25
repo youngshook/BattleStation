@@ -65,10 +65,10 @@
 
   <!-- Post title -->
   <header>
-  <!--Leancloud 操作库:-->
-  <script src="http://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-   <!--Valine 的核心代码库:-->
-  <script src='http://unpkg.com/valine/dist/Valine.min.js'></script>
+    <!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+     <!--Valine 的核心代码库:-->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
     <h1 class="{{ amsf_page_heading_class }}" title="{{ page.title | strip_html | xml_escape }}" data-title="{{ page.title | strip_html | xml_escape }}">
       {{ amsf_page_heading }}
@@ -107,13 +107,13 @@
   </div>
 
 <div class="comment"></div>
+
 <script>
     new Valine({
         av: AV,
         el: '.comment',
         app_id: '3iSU6cd3zoiWh3yozujf1OLN-gzGzoHsz',
         app_key: 'E8z97gRXiWQeWhXz2bOlXBlf',
-        avatar_cdn:'https://gravatar.loli.net/avatar/',
         placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
         verify: true,
         avatar:'monsterid'
