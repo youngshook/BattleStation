@@ -1,6 +1,6 @@
 {
   "name": "almace-scaffolding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Almace Scaffolding, a super-fast Jekyll framework",
   "author": "Tunghsiao Liu",
   "homepage": "http://sparanoid.com/lab/amsf/",
@@ -58,9 +58,10 @@
     "grunt-uncss-inline": "^1.0.3",
     "grunt-xmlmin": "^0.1.8",
     "jit-grunt": "^0.10.0",
-    "time-grunt": "^1.4.0"
+    "time-grunt": "^1.4.0",
+    "valine": "^1.1.9-beta9"
   },
   "dependencies": {
-    "valine": "^1.1.9-beta9"
+    "npm": "^6.0.0"
   }
 }
